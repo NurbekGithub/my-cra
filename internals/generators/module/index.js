@@ -93,6 +93,12 @@ module.exports = {
       },
       {
         type: 'add',
+        path: '../../src/modules/{{properCase name}}/{{properCase defaultName}}Context/{{camelCase defaultName}}Actions.js',
+        templateFile: './module/actions.js.hbs',
+        abortOnFail: true,
+      },
+      {
+        type: 'add',
         path: '../../src/modules/{{properCase name}}/{{properCase defaultName}}Context/actions.test.js',
         templateFile: './module/actions.test.js.hbs',
         abortOnFail: true,
