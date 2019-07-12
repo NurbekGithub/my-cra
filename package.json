@@ -31,7 +31,8 @@
     "react-testing-library": "6.1.2",
     "plop": "2.3.0",
     "ngrok": "^3.2.1",
-    "rimraf": "2.6.3"
+    "rimraf": "2.6.3",
+    "prettier": "1.17.0"
   },
   "scripts": {
     "analyze:clean": "rimraf stats.json",
@@ -42,7 +43,8 @@
     "start:tunnel": "ngrok http 3000 -host-header='localhost:3000'",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prettify": "prettier --write"
   },
   "eslintConfig": {
     "extends": "react-app"
