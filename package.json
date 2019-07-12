@@ -27,17 +27,16 @@
   },
   "devDependencies": {
     "chalk": "^2.4.2",
-    "node-plop": "0.18.0",
-    "react-testing-library": "6.1.2",
-    "plop": "2.3.0",
     "ngrok": "^3.2.1",
+    "node-plop": "^0.19.0",
+    "plop": "^2.4.0",
+    "prettier": "1.17.0",
+    "react-testing-library": "6.1.2",
     "rimraf": "2.6.3",
-    "prettier": "1.17.0"
+    "source-map-explorer": "^2.0.1"
   },
   "scripts": {
-    "analyze:clean": "rimraf stats.json",
-    "preanalyze": "npm run analyze:clean",
-    "analyze": "node ./internals/scripts/analyze.js",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
     "generate": "plop --plopfile internals/generators/index.js",
     "start": "react-scripts start",
     "start:tunnel": "ngrok http 3000 -host-header='localhost:3000'",
